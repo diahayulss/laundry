@@ -8,5 +8,5 @@ mysqli_query($koneksi, "DELETE FROM pakaian WHERE pakaian_transaksi = '$id'");
 
 mysqli_query($koneksi, "DELETE FROM transaksi WHERE transaksi_id = '$id'");
 
-header("location:transaksi.php");
+echo "<script> alert('Data akan dihapus?'); window.location.href = 'transaksi.php' </script>"
 ?>
